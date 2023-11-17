@@ -98,9 +98,9 @@ export default function Container() {
     <div className="w-full">
       <nav className="flex items-center max-w-5xl gap-2 mx-auto mt-4">
         <Link
-          className="flex items-center pl-4 font-mono text-lg font-bold text-gray-800"
+          className="flex items-center pl-4 font-mono text-lg font-bold text-gray-200"
           to="/">
-          <img src="/pizza2.png" className="w-12 h-12" />
+          <img src="/logo-pill.png" className="h-12 mr-2" />
           RSVPlease
         </Link>
         <DropDown
@@ -127,7 +127,7 @@ export default function Container() {
 
       {location.pathname === "/" && <Features />}
       <footer className="max-w-5xl pb-16 mx-auto">
-        <p className="px-4 pt-4 italic text-gray-600">
+        <p className="px-4 pt-4 italic text-gray-300">
           Esta aplicación se ejecuta en el protocolo nostr, que es un protocolo descentralizado
           y resistente a la censura en Internet. Si deseas
           saber más sobre nostr, visita{" "}
@@ -141,7 +141,7 @@ export default function Container() {
           . Recuerda que lo que compartes es público y todo el mundo puede verlo, así que
           piensa antes de publicar.
         </p>
-        <p className="px-4 py-2 italic text-gray-600">
+        <p className="px-4 py-2 italic text-gray-300">
           Hecho por{" "}
           <a
             target="_blank"
@@ -202,7 +202,7 @@ export default function Container() {
             value={user?.privateKey}
             onChange={(e) => setUser({ ...user, privateKey: e.target.value })}
           />
-          <button className="text-white bg-sky-600 input">
+          <button className="text-white bg-emerald-600 input">
             Guardar credenciales de Nostr
           </button>
           <button className="text-white bg-emerald-600 input" onClick={generateHandler}>
