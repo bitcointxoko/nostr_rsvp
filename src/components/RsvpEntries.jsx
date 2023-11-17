@@ -39,7 +39,7 @@ function RsvpEntries({ rsvps }) {
   return (
     <div className="card">
       <h1 className="mb-4">
-        <span className="font-bold">🧑🏽‍🤝‍🧑🏻 Participants</span> (
+        <span className="font-bold">🧑🏽‍🤝‍🧑🏻 Participantes</span> (
         <span className="text-green-500">{yesRsvps.length + yesPlusOnes}</span>/
         <span className="text-yellow-500">
           {maybeRsvps.length + maybePlusOnes}
