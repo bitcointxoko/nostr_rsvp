@@ -14,7 +14,7 @@ export default function LoadingEvent() {
           <div className="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
       ))}
-      <span className="sr-only">Loading...</span>
+      <span className="sr-only">Cargando...</span>
     </div>
   );
 }
