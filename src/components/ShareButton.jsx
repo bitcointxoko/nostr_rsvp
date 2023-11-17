@@ -38,7 +38,7 @@ function ShareButton() {
         onClick={handleCopyClick}
         className="w-14 hover:bg-gray-200 rounded-full h-14 flex items-center justify-center flex-col">
         {!isCopied && <ArrowUpOnSquareIcon className="h-7 w-7 text-gray-800" />}
-        {isCopied && <span className="text-xs text-green-500">Copied!</span>}
+        {isCopied && <span className="text-xs text-green-500">¡Copiado!</span>}
       </button>
     </div>
   );
