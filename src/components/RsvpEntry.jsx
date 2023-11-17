@@ -38,7 +38,7 @@ function RsvpEntry({ message }) {
       ) : (
         <>
           <span>{username}</span>
-          <small className="ml-1">(You)</small>
+          <small className="ml-1">(Tú)</small>
         </>
       )}
       {numberOfPlusOnes.length > 0 && parseInt(numberOfPlusOnes[0][1]) > 0 && (
