@@ -73,7 +73,7 @@ export default function CreateEvent() {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
           className="col-span-2 mb-2 input"
-          placeholder="John Doe"
+          placeholder="Juan Nadie"
           required
         />
         <label>Nombre del evento:</label>
