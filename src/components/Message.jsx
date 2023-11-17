@@ -21,7 +21,7 @@ function Message({ message }) {
           ) : (
             <>
               <strong>{username}</strong>
-              <small className="pl-1">(You)</small>
+              <small className="pl-1">(Tú)</small>
             </>
           )}
         </div>
