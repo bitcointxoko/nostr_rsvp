@@ -205,7 +205,7 @@ export default function Container() {
           <button className="text-white bg-sky-600 input">
             Guardar credenciales de Nostr
           </button>
-          <button className="text-sky-600 input" onClick={generateHandler}>
+          <button className="text-white bg-emerald-600 input" onClick={generateHandler}>
             Generar nuevas credenciales
           </button>
         </form>
