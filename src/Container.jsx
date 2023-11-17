@@ -96,7 +96,7 @@ export default function Container() {
 
   return (
     <div className="w-full">
-      <nav className="flex items-center max-w-5xl gap-2 mx-auto mt-4">
+      <nav className="flex items-center max-w-5xl gap-2 mx-auto mt-4 mb-6">
         <Link
           className="flex items-center pl-4 font-mono text-lg font-bold text-gray-200"
           to="/">
