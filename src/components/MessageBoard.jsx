@@ -24,7 +24,7 @@ function MessageBoard({ messages, messageHandler }) {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 text-lg font-mono">
       <div className="overflow-y-auto h-64 mb-4">
-        <h1 className="font-bold mb-4">💬 Message Board</h1>
+        <h1 className="font-bold mb-4">💬 Mensajes</h1>
         <hr className="my-2" />
         {messages.map((message, index) => (
           <Message key={index} message={message} />
@@ -37,7 +37,7 @@ function MessageBoard({ messages, messageHandler }) {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className="w-1/3 rounded-full border border-gray-200 py-1 px-4 mb-2"
-          placeholder="Name:"
+          placeholder="Nombre:"
           required
         />
         <div className="flex gap-2">
@@ -46,13 +46,13 @@ function MessageBoard({ messages, messageHandler }) {
             value={newMessage}
             onChange={handleNewMessageChange}
             className="flex-1 rounded-full border border-gray-200 py-1 px-4"
-            placeholder="Type your message..."
+            placeholder="Escribe tu mensaje..."
             required
           />
           <button
             type="submit"
             className="rounded-full border border-gray-200 py-1 px-4 hover:bg-sky-800 hover:text-white transition">
-            Send
+            Enviar
           </button>
         </div>
       </form>
