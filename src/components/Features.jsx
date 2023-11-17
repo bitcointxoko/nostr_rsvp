@@ -32,21 +32,21 @@ export default function Example() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
           <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-gray-800">
+              <h2 className="text-base font-semibold leading-7 text-gray-200">
                 Planificación del registro de eventos
               </h2>
               <p className="mt-2 text-3xl font-bold font-serif tracking-tight text-amber-500 sm:text-4xl">
                 Sepa quién viene.
               </p>
-              <p className="mt-6 text-lg leading-6 text-gray-700">
+              <p className="mt-6 text-lg leading-6 text-gray-200">
                Hoy en día es difícil planificar un evento. Nunca se sabe quién vendrá o no. Con RSVPlease, puedes crear fácilmente un evento y compartirlo con tus amigos. Ellos pueden aceptar o rechazar y tú puedes saber quién va a venir.
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-700 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-200 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
+                    <dt className="inline font-semibold text-gray-300">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-sky-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-gray-100"
                         aria-hidden="true"
                       />
                       {feature.name}
