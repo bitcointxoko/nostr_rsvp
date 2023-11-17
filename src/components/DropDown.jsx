@@ -13,7 +13,7 @@ function DropDown({ events, setNostrOpen, removeEventHandler }) {
       className="relative inline-block text-left ml-auto font-mono">
       <div>
         <Menu.Button className="inline-flex w-full justify-center items-center gap-x-1.5 px-3 py-2 font-semibold text-gray-900 ">
-          Settings
+          Ajustes
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
             aria-hidden="true"
@@ -39,7 +39,7 @@ function DropDown({ events, setNostrOpen, removeEventHandler }) {
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 border-b"
                   )}>
-                  Create Event
+                  Crear Evento
                 </Link>
               )}
             </Menu.Item>
@@ -77,7 +77,7 @@ function DropDown({ events, setNostrOpen, removeEventHandler }) {
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block text-left px-4 py-2 border-t"
                   )}>
-                  Nostr Settings
+                  Ajustes Nostr
                 </button>
               )}
             </Menu.Item>
