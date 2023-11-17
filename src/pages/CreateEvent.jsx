@@ -53,7 +53,7 @@ export default function CreateEvent() {
   };
 
   return (
-    <div className="mt-8 mb-8 border-b md:mt-16 md:mb-16">
+    <div className="mt-8 mb-8 md:mt-16 md:mb-16">
       <h1 className="px-4 mb-4 font-serif text-3xl font-bold md:text-5xl text-amber-500">
         ¿Visitantes sorpresa? <br />
         ¡Sólo si traen pizza!
