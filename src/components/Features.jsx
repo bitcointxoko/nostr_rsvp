@@ -35,7 +35,7 @@ export default function Example() {
               <h2 className="text-base font-semibold leading-7 text-gray-800">
                 Planificación del registro de eventos
               </h2>
-              <p className="mt-2 text-3xl font-bold font-serif tracking-tight text-sky-700 sm:text-4xl">
+              <p className="mt-2 text-3xl font-bold font-serif tracking-tight text-amber-500 sm:text-4xl">
                 Sepa quién viene.
               </p>
               <p className="mt-6 text-lg leading-6 text-gray-700">
