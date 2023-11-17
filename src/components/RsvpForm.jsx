@@ -34,7 +34,7 @@ function RsvpForm({ event, myRsvp, rsvpHandler }) {
         <ShareButton />
         <h1 className="font-bold">🗓️ {event.name}</h1>
         <p className="text-gray-500 text-sm md:text-base">
-          {event.start?.format("DD.MM.YYYY")} ab {event.start?.format("HH:mm")}{" "}
+          {event.start?.format("DD.MM.YYYY")} a las {event.start?.format("HH:mm")}{" "}
           ({event.start?.format("dddd")})
         </p>
         <hr className="my-2" />
@@ -43,7 +43,7 @@ function RsvpForm({ event, myRsvp, rsvpHandler }) {
         </span>
 
         <div className="md:grid grid-cols-3 mt-4 gap-2">
-          <p className="py-1">Your name?</p>
+          <p className="py-1">Tu nombre?</p>
           <input
             onChange={(e) => setUsername(e.target.value)}
             value={username}
@@ -52,7 +52,7 @@ function RsvpForm({ event, myRsvp, rsvpHandler }) {
           />
         </div>
         <div className="md:grid grid-cols-3 mt-2 gap-2">
-          <p className="py-1">Are you coming by?</p>
+          <p className="py-1">Vas a venir?</p>
           <div className="col-span-2 flex gap-2 pb-2">
             <button
               name="yes"
@@ -61,7 +61,7 @@ function RsvpForm({ event, myRsvp, rsvpHandler }) {
                 "hover:bg-green-400 hover:text-white",
                 myRsvp?.content === "yes" ? "bg-green-500 text-white" : ""
               )}>
-              Yes
+              Sí
             </button>
             <button
               name="maybe"
@@ -70,7 +70,7 @@ function RsvpForm({ event, myRsvp, rsvpHandler }) {
                 "hover:bg-yellow-400 hover:text-white",
                 myRsvp?.content === "maybe" ? "bg-yellow-500 text-white" : ""
               )}>
-              Maybe
+              No estoy seguro
             </button>
             <button
               name="no"
@@ -84,7 +84,7 @@ function RsvpForm({ event, myRsvp, rsvpHandler }) {
           </div>
         </div>
         <div className="md:grid grid-cols-3 my-2 gap-2">
-          <p className="py-1">Is somebody joining you?</p>
+          <p className="py-1">Te acompaña alguien?</p>
           <input
             type="number"
             className="input col-span-2"
