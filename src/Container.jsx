@@ -47,7 +47,7 @@ export default function Container() {
       } else if (!standalone && !safari) {
         // iOS webview
         if (
-          confirm("For better experience please open the site in the Browser.")
+          confirm("Para una mejor experiencia, abre el sitio en el navegador.")
         ) {
           window.open(location.href, "_system");
         }
@@ -55,7 +55,7 @@ export default function Container() {
     } else {
       if (userAgent.includes("wv")) {
         // Android webview
-        alert("For better experience please open the site in the Browser.");
+        alert("Para una mejor experiencia, abra el sitio en el navegador.");
         window.open(location.href, "_system");
       } else {
         // Chrome
@@ -74,7 +74,7 @@ export default function Container() {
   const removeEventHandler = (e, event) => {
     e.preventDefault();
 
-    if (!confirm("Are you sure you want to remove this event?")) return;
+    if (!confirm("¿Estás seguro de que deseas eliminar este evento?")) return;
 
     setEvents((prev) => prev.filter((ee) => ee.id !== event.id));
   };
@@ -82,7 +82,7 @@ export default function Container() {
   const generateHandler = (e) => {
     e.preventDefault();
 
-    if (!confirm("Are you sure you want to generate new credentials?")) return;
+    if (!confirm("¿Estás seguro de que deseas generar nuevas credenciales?")) return;
 
     const privateKey = generatePrivateKey();
     const publicKey = getPublicKey(privateKey);
@@ -128,9 +128,9 @@ export default function Container() {
       {location.pathname === "/" && <Features />}
       <footer className="max-w-5xl pb-16 mx-auto">
         <p className="px-4 pt-4 italic text-gray-600">
-          This application runs on the nostr protocol, which is a decentralized
-          and cencorship resistant protocol on the internet. If you want to
-          learn more about nostr, check out{" "}
+          Esta aplicación se ejecuta en el protocolo nostr, que es un protocolo descentralizado
+          y resistente a la censura en Internet. Si deseas
+          saber más sobre nostr, visita{" "}
           <a
             href="https://nostr.com"
             className="underline"
@@ -138,11 +138,11 @@ export default function Container() {
             rel="noreferrer">
             nostr.com
           </a>
-          . Just remember, what you share is public for everyone to see, so
-          think before you post.
+          . Recuerda que lo que compartes es público y todo el mundo puede verlo, así que
+          piensa antes de publicar.
         </p>
         <p className="px-4 py-2 italic text-gray-600">
-          Made by{" "}
+          Hecho por{" "}
           <a
             target="_blank"
             rel="noreferrer"
@@ -158,13 +158,13 @@ export default function Container() {
             href="https://github.com/mtsarah">
             mtsarah
           </a>{" "}
-          in Vienna.{" "}
+          en Viena.{" "}
           <a
             target="_blank"
             rel="noreferrer"
             className="underline"
             href="https://github.com/flobauer/nostr_rsvp">
-            Sourcecode on Github
+            Código fuente en Github
           </a>
         </p>
       </footer>
@@ -174,17 +174,12 @@ export default function Container() {
           onSubmit={updateProfileHandler}>
           <h1 className="text-lg font-bold">Nostr Settings</h1>
           <p className="font-sans text-sm text-gray-800">
-            The Nostr protocol, short for "Notes and Other Stuff Transmitted by
-            Relays," is a digital communication system designed to be simple and
-            open. This system ensures that no single company or server has
-            control over the conversation, championing the freedom of speech and
-            making sure that your ability to communicate isn't easily shut down
-            by any one entity.
+            El protocolo Nostr, abreviatura de "Notes and Other Stuff Transmitted by Relays", es un sistema de comunicación digital sencillo y abierto. Este sistema garantiza que ninguna empresa o servidor controle la conversación, defendiendo la libertad de expresión y asegurándose de que tu capacidad de comunicación no sea fácilmente bloqueada por una sola entidad.
           </p>
           <p className="mb-4 font-sans text-sm text-gray-800">
-            That said, it is also transparent, which means that this event and
-            everybody joining it is somewhere in the protocol. If you want to
-            learn more about Nostr, check out{" "}
+            Dicho esto, también es transparente, lo que significa que este evento y
+            todos los que se unen a él están en algún lugar del protocolo. Si desea
+            saber más sobre Nostr, echa un vistazo a{" "}
             <a
               href="https://nostr.com"
               className="text-purple-800 underline"
@@ -194,13 +189,13 @@ export default function Container() {
             </a>
             .
           </p>
-          <label className="font-bold">Public Key</label>
+          <label className="font-bold">Clave Pública</label>
           <input
             className="input"
             value={user?.publicKey}
             onChange={(e) => setUser({ ...user, publicKey: e.target.value })}
           />
-          <label className="mt-4 font-bold">Private Key</label>
+          <label className="mt-4 font-bold">Clave Privada</label>
           <input
             type="password"
             className="input"
@@ -208,10 +203,10 @@ export default function Container() {
             onChange={(e) => setUser({ ...user, privateKey: e.target.value })}
           />
           <button className="text-white bg-sky-600 input">
-            Save Nostr Credentials
+            Guardar credenciales de Nostr
           </button>
           <button className="text-sky-600 input" onClick={generateHandler}>
-            Generate new Credentials
+            Generar nuevas credenciales
           </button>
         </form>
       </Modal>
