@@ -6,21 +6,21 @@ import {
 
 const features = [
   {
-    name: "Free to use.",
+    name: "De uso gratuito.",
     description:
-      "The tool is free to use. You can create as many events as you want, and invite as many people as you want.",
+      "La herramienta es de uso gratuito. Puedes crear tantos eventos como quieras e invitar a tanta gente como desees.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "No Registration Required.",
+    name: "No es necesario registrarse.",
     description:
-      "You don't need to register, just create an event and share the link with your friends. They can then confirm and see who is coming and who is not.",
+      "No es necesario registrarse, basta con crear un evento y compartir el enlace con tus amigos. Así podrán confirmar y ver quién viene y quién no.",
     icon: LockClosedIcon,
   },
   {
-    name: "Decentralized & Secure.",
+    name: "Descentralizado y seguro.",
     description:
-      "RSVPlease is built on the nostr protocol. This means that your data is stored on a cryptographic and cencorship resistant network. Organizing a birthday party never felt better!",
+      "RSVPlease se basa en el protocolo nostr. Esto significa que tus datos se almacenan en una red criptográfica y resistente a la censura. Organizar una fiesta de cumpleaños nunca ha sido tan fácil.",
     icon: ServerIcon,
   },
 ];
@@ -33,16 +33,13 @@ export default function Example() {
           <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-gray-800">
-                Event Registration Planning
+                Planificación del registro de eventos
               </h2>
               <p className="mt-2 text-3xl font-bold font-serif tracking-tight text-sky-700 sm:text-4xl">
-                Know who's in.
+                Sepa quién viene.
               </p>
               <p className="mt-6 text-lg leading-6 text-gray-700">
-                Nowadays, it is tough to plan an event. You never know who will
-                come or not. With RSVPlease, you can easily create an event and
-                share it with your friends. They can accept or decline and you
-                can track who is coming.
+               Hoy en día es difícil planificar un evento. Nunca se sabe quién vendrá o no. Con RSVPlease, puedes crear fácilmente un evento y compartirlo con tus amigos. Ellos pueden aceptar o rechazar y tú puedes saber quién va a venir.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-700 lg:max-w-none">
                 {features.map((feature) => (
