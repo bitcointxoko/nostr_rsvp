@@ -58,11 +58,11 @@ export default function CreateEvent() {
         ¿Visitantes sorpresa? <br />
         ¡Sólo si traen pizza!
       </h1>
-      <p className="max-w-xl px-5 mb-4 text-lg text-gray-700">
+      <p className="max-w-xl px-5 mb-4 text-lg text-gray-200">
         Una sencilla solución de RSVP para recibir las confirmaciones de tus eventos y
         saber quién va a venir.
       </p>
-      <strong className="block px-4 pt-4 pb-2 font-serif text-xl text-gray-700">
+      <strong className="block px-4 pt-4 pb-2 font-serif text-xl text-gray-100">
         Crea tu primer Evento:
       </strong>
       <form
